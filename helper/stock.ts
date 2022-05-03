@@ -38,4 +38,4 @@ export function getStockData() {
     stockOptions,
   };
 }
-getStockData();
+// getStockData();
