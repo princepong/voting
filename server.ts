@@ -22,9 +22,9 @@ app.use(express.json());
 app.get("/", function (req: Request, res: Response) {
   res.sendFile(path.resolve(__dirname, "public/index.html"));
 });
-app.get("/thank-you", function (req: Request, res: Response) {
-  res.sendFile(path.resolve(__dirname, "public/thank-you.html"));
-});
+// app.get("/thank-you", function (req: Request, res: Response) {
+//   res.sendFile(path.resolve(__dirname, "public/thank-you.html"));
+// });
 
 app.get("/stock-data", (req, res) => {
   res.json(getStockData());
