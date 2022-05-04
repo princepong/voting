@@ -93,6 +93,7 @@
         <div id="myData"></div>
     </div>
 
+
     <script>
         fetch("companyList.json")
             .then((response) => response.json())
@@ -104,7 +105,7 @@
             for (let i = 0; i < data.length; i++) {
                 let imgSrc = document.createElement("img");
                 imgSrc.className = "roundedOne";
-                imgSrc.src = data[i].url;
+                imgSrc.src = data[i].filename;
                 imageLink.appendChild(imgSrc);
             }
         }
